@@ -93,7 +93,8 @@ class LaserWeaponArmory(Scene):
         print "get the bomb.  The code is 3 digits."
         code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
         guess = raw_input("[keypad]> ")
-        guesses = 0
+        #I initialized the guesses variable to 1 because if it's 0, the lock counts 11 times.
+        guesses = 1
 
         while guess != code and guesses < 10:
             print "BZZZZEDDD!"
