@@ -55,7 +55,7 @@ ROOT_URLCONF = 'netmag.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/home/stefan/git_tutorial/work/hello/netmag/netmag/templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,3 +119,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = ('/home/stefan/git_turotial/work/hello/netmag/netmag/static/',)
